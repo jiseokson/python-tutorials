@@ -2,15 +2,13 @@ import time
 
 MAX_PRIME = 10000
 
-# 직관적인 코드
+# 간단한 풀이
 start = time.time()
 for i in range(2, MAX_PRIME + 1):
-    ok = True
     for j in range(2, i):
         if i % j == 0:
-            ok = False
             break
-    if ok:
+    else:
         print(i, end = ' ')
 end = time.time()
 print('\n%.7f' % (end - start))
