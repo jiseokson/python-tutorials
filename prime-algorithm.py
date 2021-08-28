@@ -21,7 +21,7 @@ while i * i <= MAX_PRIME:
     if isPrime[i]:
         for j in range(i * i, MAX_PRIME + 1, i):
             isPrime[j] = False
-    i = i + 1
+    i += 1
 for i in range(2, MAX_PRIME + 1):
     if isPrime[i]:
         print(i, end = ' ')
